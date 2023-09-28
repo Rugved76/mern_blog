@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(310deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(353deg 86% 54%) 50%,
+            hsl(68deg 100% 50%) 100%); */
+    /* background-color: #026c80; */
+    background-color: #030303;
+}
+
+.loading {
+    /* margin: 300px 600px; */
+    margin: 20vw 50vh;
+    width: 200px;
+    height: 200px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    opacity: 0;
+    display: none;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    justify-content: flex-start;
+    max-width: 300px;
+    width: 300px;
+    color: #551a8b;
+    border-radius: 5px;
+    /* margin: 10rem auto 30rem auto; */
+    padding: 0rem 1rem;
+    height: 90%;
+}
+
+.userinfo h1 {
+    margin: 0rem auto;
+}
+
+.userinfo ul li {
+    text-align: left;
+    margin: 2px auto;
+    list-style: none;
+    align-items: flex-start;
+    padding: .5rem;
+}
+
+.userinfo button {
+    margin: 2px auto;
+    background-color: #a4e5ff;
+    border-radius: 30%;
+    border: none;
+}
+
+.scroll-to-top {
+    /* float: right; */
+    background-color: transparent;
+    border: none;
+    color: white;
+    /* margin-left: 15rem; */
+    /* position: sticky  ; */
+}
+
+/* StickyScrollToTopButton.css */
+.sticky-scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sticky-scroll-to-top.visible {
+    opacity: 1;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 98%;
+    margin-left: 1px;
+}
+
+
+@media (max-width: 768px) {
+    #card {
+        width: 80%;
+    }
+
+    .profileuser {
+        width: 90%;
+        background-color: white;
+    }
+
+    #logo {
+        font-size: 16px;
+        margin-right: .1rem;
+        display: none;
+    }
+
+    #avatar {
+        display: none;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .userinfo {
+        width: 90%;
+    }
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* #logoutbutton {
+        display: none;
+    } */
+    #singlepage {
+        /* width: 500px; */
+        width: 90%;
+        padding: 0;
+    }
+
+    .profileuser {
+        background-color: black;
+        color: white;
+        width: 400px;
+    }
+
+    .loading {
+        margin: 20vw 50vh;
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatarname {
+        background-color: transparent;
+        border: none;
+        color:white;
+        font-size: 11px;
+        /* margin: 0px 0px 0px 5px; */
+    }
+}
+
+#singlepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5.2rem auto;
+    /* background-color: white; */
+    max-width: 55vw;
+    max-width: 600px;
+    background-color: #1a1a1b;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    padding: 1rem 0;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#singlepage img {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#singlepage h1 {
+    margin: .75rem 0;
+}
+
+#singlepage h6 {
+    margin: .75rem 0;
+}
+
+#innerpage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#logoutbutton {
+    display: none;
+}
+
+#innerpage p {
+    word-spacing: 1px;
+    line-height: 1.25rem;
+}
+
+.profileuser {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #030303;
+    width: 27%;
+    color: white;
+    padding: 1rem 0;
+    margin: 8rem auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.profileuser li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.profileuser ul {
+    margin: auto;
+}
+
+.profileuser button {
+    background-color: transparent;
+    border: none;
+}
+
+#profilepic {
+    height: 60px;
+    width: 60px;
+    margin: 1rem auto;
+}
+
+.likebutton {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    /* background-color: #ff3040; */
+    border: none;
+    /* color: white; */
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.cardtext {
+    margin-top: 0.25rem;
+    color: white;
+}
+
+.avatarname {
+    background-color: transparent;
+    border: none;
+    color:white;
+    margin: 0px 4rem 0px 5px;
+    display: flex;
+    flex-direction: row;
+    /* align-items:flex-end; */
+}
