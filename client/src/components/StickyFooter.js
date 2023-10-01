@@ -25,6 +25,7 @@ export default function StickyFooter() {
                 <Box
                     component="footer"
                     sx={{
+                        // borderTop :'1px solid white',
                         py: 3,
                         px: 2,
                         mt: 'auto',
@@ -32,7 +33,7 @@ export default function StickyFooter() {
                         color: 'white'
                     }}
                 >
-                    <Container maxWidth="sm">
+                    <Container maxWidth="sm"> 
                         <Typography>
                             <a href="https://github.com/Rugved76/mern-blog2" target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon color='primary' />

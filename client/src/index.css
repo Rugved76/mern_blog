@@ -6,17 +6,14 @@
 }
 
 body {
-    /* background-image: linear-gradient(310deg,
-            hsl(240deg 100% 20%) 0%,
-            hsl(353deg 86% 54%) 50%,
-            hsl(68deg 100% 50%) 100%); */
-    /* background-color: #026c80; */
-    background-color: #030303;
+    background-color: #2c323e;
+    /* background-color: #030303; */
+
 }
 
 .loading {
     /* margin: 300px 600px; */
-    margin: 20vw 50vh;
+    margin: 30vh 49vw;
     width: 200px;
     height: 200px;
 }
@@ -109,10 +106,10 @@ body {
         width: 80%;
     }
 
-    .profileuser {
+    /* .profileuser {
         width: 90%;
         background-color: white;
-    }
+    } */
 
     #logo {
         font-size: 16px;
@@ -148,16 +145,12 @@ body {
         padding: 0;
     }
 
-    .profileuser {
-        background-color: black;
-        color: white;
-        width: 400px;
-    }
 
     .loading {
-        margin: 20vw 50vh;
+        margin: 40vh 48vw;  
         width: 200px;
         height: 200px;
+        /* height: 200px; */
     }
 
     .avatarname {
@@ -166,6 +159,16 @@ body {
         color:white;
         font-size: 11px;
         /* margin: 0px 0px 0px 5px; */
+    }
+
+    .profileuser{
+        /* width: 200px; */
+        /* background-color: none; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8rem 10vw;
+        border: none;
     }
 }
 
@@ -178,12 +181,13 @@ body {
     /* background-color: white; */
     max-width: 55vw;
     max-width: 600px;
-    background-color: #1a1a1b;
+    background-color: wheat;
+    /* background-color: #1a1a1b; */
     width: 90%;
     height: auto;
     border-radius: 5px;
     padding: 1rem 0;
-    color: white;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -219,17 +223,13 @@ body {
 }
 
 .profileuser {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #030303;
-    width: 27%;
+    align-items: flex-start; */
     color: white;
     padding: 1rem 0;
-    margin: 8rem auto;
-    border: 1px solid white;
-    border-radius: 5px;
+    margin: 8rem 35vw;
 }
 
 .profileuser li {

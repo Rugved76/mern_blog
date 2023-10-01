@@ -49,7 +49,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
             console.log(err);
             throw err;
         }
-    };
+    };  //hello
 
     const deleteRequest = async () => {
         try {
@@ -95,7 +95,8 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                 height: '80%',
                 margin: "10px",
                 padding: 2,
-                backgroundColor: '#1a1a1b',
+                backgroundColor: 'wheat',
+                // backgroundColor: 'peach',
                 ":hover": {
                     transition: '0.3s ease-in-out',
                     boxShadow: 'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px'
@@ -106,7 +107,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
             {isUser && (
                 <Box>
                     <IconButton onClick={handleEdit} sx={{
-                        border: '.5px solid #1a1a1b', ":hover": {
+                        border: '.5px solid wheat', ":hover": {
                             borderRadius: '50%',
                             border: '.5px solid #1976d2',
                             transition: '0.3s ease-in-out'
@@ -115,7 +116,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                         <ModeEditOutlineIcon color="primary" />
                     </IconButton>
                     <IconButton onClick={handleDelete} sx={{
-                        border: '.5px solid #1a1a1b', ":hover": {
+                        border: '.5px solid wheat', ":hover": {
                             borderRadius: '50%',
                             border: '.5px solid #d32f2f',
                             transition: '0.3s ease-in-out'
@@ -128,24 +129,24 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
 
             <CardHeader
                 avatar={
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center'}}>
                         <Avatar
                             onClick={fetchProfile}
                             className={classes.font}
-                            sx={{ bgcolor: "#bdbdbd", color: '#1a1a1b', cursor: 'pointer',width: '32px', height: '32px'}}
+                            sx={{ bgcolor: "#bdbdbd", color: '#2c323e', cursor: 'pointer',width: '32px', height: '32px'}}
                             aria-label="recipe"
                         >
                             {userName ? userName.charAt(0) : "X"}
                         </Avatar>
-                        <button onClick={fetchProfile} className="avatarname"><h3>{userName}</h3></button>
+                        <button onClick={fetchProfile} className="avatarname"><h3 style={{color:'#2c323e'}}>{userName}</h3></button>
                         <button  className="likebutton" onClick={handleLike} disabled={isLiked} style={{cursor:'pointer'}}>
-                            {isLiked ? <FavoriteRounded sx={{ color: "red" }}></FavoriteRounded> :
-                                <FavoriteRounded sx={{ color: 'white' }}></FavoriteRounded>}<span style={{ color: 'white' }}>{likeCount}</span>
+                            {isLiked ? <FavoriteRounded sx={{ color: "#e94d5b" }}></FavoriteRounded> :
+                                <FavoriteRounded sx={{ color: '#2c323e' }}></FavoriteRounded>}<span style={{ color: '#2c323e' }}>{likeCount}</span>
                         </button>
                     </div>
                 }
                 // title={title}
-                style={{ fontWeight: 'bolder', fontSize: '20px', color: 'white' }}
+                style={{ fontWeight: 'bolder', fontSize: '20px', color: '#2c323e' }}
             />
 
             <Link style={{ textDecoration: 'none' }} to={`/blogs/${id}`}>
@@ -153,7 +154,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                     component="img"
                     image={imageURL}
                     alt="Paella dish"
-                    style={{ borderRadius: '5px', width: '50%', height: 'auto', backgroundSize: 'contain', margin: '0px auto', imageRendering: 'auto' }}
+                    style={{ borderRadius: '5px', width: '50%', height: 'auto', backgroundSize: 'contain', margin: '0px auto', imageRendering: 'auto',color:'#2c323e'}}
                 />
 
                 <CardContent>
@@ -162,10 +163,9 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                     <Typography
                         className={classes.font}
                         variant="body2"
-                        color="white"
+                        color="#2c323e"
                     >
                         <h3>{title}</h3>
-                        {/* <span style={{ padding: '0.1em 0.01em 0.1em 0.01em', backgroundColor: '#1a1a1b', borderRadius: '0.5rem' }}><button style={{ backgroundColor: 'transparent', border: 'none, cursor: 'pointer', color: 'white' }} onClick={fetchProfile}>@{userName}</button></span> {":  "} {description.substring(0, 65)}... */}
                         <small>Read more ...</small>
                     </Typography>
                 </CardContent>
