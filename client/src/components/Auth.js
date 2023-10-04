@@ -87,7 +87,7 @@ const Auth = () => {
                     boxShadow='rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
                     // boxShadow= 'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px'
                     padding={2}
-                    margin="auto"
+                    margin="3rem auto"
                     marginTop={11}
                     borderRadius={2}
                     backgroundColor='white'
