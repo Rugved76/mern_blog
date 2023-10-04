@@ -90,7 +90,7 @@ const Auth = () => {
                     margin="auto"
                     marginTop={11}
                     borderRadius={2}
-                    backgroundColor='wheat'
+                    backgroundColor='white'
                 >
                     <Typography variant="h2" padding={3} textAlign="center" style={{ color: '#1976d2' }}>
                         {isSignup ? "Sign In" : "Login"}
