@@ -107,7 +107,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
             {isUser && (
                 <Box>
                     <IconButton onClick={handleEdit} sx={{
-                        border: '.5px solid wheat', ":hover": {
+                        border: '.5px solid white', ":hover": {
                             borderRadius: '50%',
                             border: '.5px solid #1976d2',
                             transition: '0.3s ease-in-out'
@@ -116,7 +116,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                         <ModeEditOutlineIcon color="primary" />
                     </IconButton>
                     <IconButton onClick={handleDelete} sx={{
-                        border: '.5px solid wheat', ":hover": {
+                        border: '.5px solid white', ":hover": {
                             borderRadius: '50%',
                             border: '.5px solid #d32f2f',
                             transition: '0.3s ease-in-out'
