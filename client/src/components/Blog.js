@@ -92,7 +92,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
             sx={{
                 width: "90%",
                 maxHeight: '25rem',
-                height: '80%',
+                height: '96%',
                 margin: "10px",
                 padding: 2,
                 backgroundColor: 'white',
@@ -141,7 +141,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                         <button onClick={fetchProfile} className="avatarname"><h3 style={{color:'#2c323e'}}>{userName}</h3></button>
                         <button  className="likebutton" onClick={handleLike} disabled={isLiked} style={{cursor:'pointer'}}>
                             {isLiked ? <FavoriteRounded sx={{ color: "#e94d5b" }}></FavoriteRounded> :
-                                <FavoriteRounded sx={{ color: '#2c323e' }}></FavoriteRounded>}<span style={{ color: '#2c323e' }}>{likeCount}</span>
+                                <FavoriteRounded sx={{ color: '#2c323e' }}></FavoriteRounded>}
                         </button>
                     </div>
                 }
@@ -154,11 +154,12 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                     component="img"
                     image={imageURL}
                     alt="Paella dish"
-                    style={{ borderRadius: '5px', width: '50%', height: 'auto', backgroundSize: 'contain', margin: '0px auto', imageRendering: 'auto',color:'#2c323e'}}
+                    className="thumbnail"
+                    style={{ borderRadius: '5px', width: '70%', height: '10rem',overflow:'hidden', backgroundSize: 'contain', margin: '0px auto', imageRendering: 'auto',color:'#2c323e'}}
                 />
-
                 <CardContent>
-                    <hr />
+                <span style={{ color: '#2c323e' }}>{likeCount} likes</span>
+                    <hr style={{color:'transparent'}}/>
                     <br />
                     <Typography
                         // className={classes.font}
@@ -166,7 +167,8 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                         color="#2c323e"
                     >
                         <h3>{title}</h3>
-                        <small>Read more ...</small>
+                        {/* <small>Read more ...</small>     */}
+                        <p>{description.substring(0,103)}...</p>
                     </Typography>
                 </CardContent>
             </Link>
