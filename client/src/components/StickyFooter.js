@@ -35,7 +35,7 @@ export default function StickyFooter() {
                 >
                     <Container maxWidth="sm"> 
                         <Typography>
-                            <a href="https://bloggsy.onrender.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Rugved76/mern_blog" target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon color='primary' />
                             </a>
                             <a href='https://www.linkedin.com/in/rugved-wagh-aa51ab207/' target='_blank'>
