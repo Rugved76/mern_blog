@@ -51,8 +51,8 @@ const Header = ({ username }) => {
     return (
         <AppBar
             sx={{
-                color: '#d02330',
-                background: '#fdee6f',
+                color: 'white',
+                background: '#27d3c5',
                 position: 'fixed',  // fixed and sticky is key
                 top: 0,
                 left: 0,
