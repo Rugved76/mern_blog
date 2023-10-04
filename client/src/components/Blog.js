@@ -95,7 +95,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
                 height: '80%',
                 margin: "10px",
                 padding: 2,
-                backgroundColor: 'wheat',
+                backgroundColor: 'white',
                 // backgroundColor: 'peach',
                 ":hover": {
                     transition: '0.3s ease-in-out',
