@@ -92,7 +92,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id, email, creat
             sx={{
                 width: "90%",
                 maxHeight: '25rem',
-                height: '95%',
+                height: '94%',
                 margin: "10px",
                 padding: 2,
                 backgroundColor: 'white',
