@@ -2,7 +2,7 @@ import express from "express";
 import { getAllUser, login, signup } from "../controllers/user-controller.js";
 
 const router = express.Router();
-
+router.get("/blogs", getAllUser);            
 router.get("/", getAllUser);
 router.post("/signup", signup);
 router.post("/login", login);
